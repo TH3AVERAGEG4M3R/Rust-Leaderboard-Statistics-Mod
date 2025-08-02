@@ -11,7 +11,7 @@ using System.IO;
 
 namespace Oxide.Plugins
 {
-    [Info("Player Stats Leaderboard", "YourName", "1.0.0")]
+    [Info("Player Stats Leaderboard", "TH3AVERAGEG4M3R", "1.0.0")]
     [Description("Comprehensive player statistics tracking and leaderboard system")]
     public class PlayerStatsLeaderboard : RustPlugin
     {
