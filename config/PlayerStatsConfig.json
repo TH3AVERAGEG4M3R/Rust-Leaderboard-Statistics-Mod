@@ -1,0 +1,9 @@
+{
+  "Enable Chat Commands": true,
+  "Auto Save Interval (minutes)": 5,
+  "Leaderboard Top Count": 10,
+  "Track PVP Only": false,
+  "Reset Stats on Wipe": false,
+  "Enable Distance Tracking": true,
+  "Enable Farming Stats": true
+}

@@ -1,0 +1,36 @@
+modules = ["dotnet"]
+
+[nix]
+channel = "stable-25_05"
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Rust Oxide Mod"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "rust_oxide_test"
+
+[[workflows.workflow]]
+name = "Rust Oxide Mod"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "dotnet new console -n PlayerStatsLeaderboard && cd PlayerStatsLeaderboard && cp ../PlayerStatsLeaderboard.cs Program.cs && dotnet add package Newtonsoft.Json && dotnet run"
+
+[[workflows.workflow]]
+name = "rust_oxide_test"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "echo \"Testing Rust Oxide Plugin Structure...\" && echo \"Checking if we have the main plugin file...\" && ls -la PlayerStatsLeaderboard.cs && echo \"Checking config structure...\" && cat config/PlayerStatsConfig.json && echo \"Checking language file...\" && cat lang/en.json && echo \"Plugin file structure appears valid. This is a Rust Oxide plugin that needs to be loaded on a Rust server with Oxide framework.\""

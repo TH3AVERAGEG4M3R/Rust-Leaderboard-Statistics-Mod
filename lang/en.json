@@ -1,0 +1,8 @@
+{
+  "NoPermission": "You don't have permission to use this command.",
+  "NoStatsFound": "No statistics found for this player.",
+  "PlayerNotFound": "Player not found.",
+  "InvalidCategory": "Invalid category. Available: kills, kd, headshots, distance, farming",
+  "PlayerStatsFormat": "<color=#00ff00>{0}'s Statistics:</color>\nKills: {1} | Deaths: {2} | K/D: {3}\nHeadshots: {4} | One-Shot Kills: {5}\nFurthest Kill: {6}m\nRockets Used: {7} | C4 Used: {8}\nResources: Wood({9}) Stone({10}) Metal({11}) Sulfur({12})\nDistance Traveled: {13}m",
+  "LeaderboardHeader": "<color=#ffff00>=== {0} LEADERBOARD ===</color>"
+}
